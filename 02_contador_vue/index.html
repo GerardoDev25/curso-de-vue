@@ -7,12 +7,14 @@
       content="width=device-width, initial-scale=1.0"
     />
 
-    <!-- Metadata para PWA -->
+    <!-- * Metadata para PWA -->
     <!-- Modificar color barra de estado ANDROID -->
     <meta name="theme-color" content="#41b883" />
+
     <!-- Optimizaciones de SEO -->
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
+
     <!-- Modificar Barra de estado IOS -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
@@ -22,7 +24,7 @@
 
     <title>Contador App</title>
 
-    <!-- Iconos -->
+    <!-- * Iconos -->
     <link
       rel="shortcut icon"
       href="./img/favicon.png"
@@ -34,10 +36,10 @@
       href="./img/favicon.png"
     />
 
-    <!-- Manifest -->
+    <!-- * Manifest -->
     <link rel="manifest" href="./manifest.json" />
 
-    <!-- Hojas de estilos -->
+    <!-- * Hojas de estilos -->
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
@@ -53,10 +55,11 @@
       <h3 class="count">{{count}}</h3>
       <hr />
       <div class="buttons">
-        <button @click="modCount('dis', 50)">-1</button>
-        <button @click="modCount('', 50)">+1</button>
+        <button @click="modCount('dis', 1)">-1</button>
+        <button @click="modCount('', 1)">+1</button>
       </div>
     </div>
+    <script src="./load.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/mountApp.js"></script>
   </body>
